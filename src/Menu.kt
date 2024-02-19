@@ -67,7 +67,7 @@ fun agregarAlCarrito(scanner: Scanner, productos: List<Producto>, carrito: Carri
         val productoSeleccionado = productos[opcion - 1]
         if (productoSeleccionado.cantidadDisponible > 0) {               // Verificar si hay stock disponible
             println("Ingrese la cantidad de ${productoSeleccionado.nombre} que desea agregar al carrito:")
-            var cantidad = scanner.nextInt()
+            val cantidad = scanner.nextInt()
             if (cantidad > 0) {
                 if (cantidad <= productoSeleccionado.cantidadDisponible) {  // Verificar si la cantidad es válida
                     carrito.agregarProducto(productoSeleccionado, cantidad)
