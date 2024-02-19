@@ -1,0 +1,11 @@
+[
+  {"nombre": "Camisa", "precio": 25.0, "cantidadDisponible": 10},
+  {"nombre": "Pantalón", "precio": 35.0, "cantidadDisponible": 15},
+  {"nombre": "Zapatos", "precio": 45.0, "cantidadDisponible": 20},
+  {"nombre": "Overoles", "precio": 25.0, "cantidadDisponible": 10},
+  {"nombre": "Calcetas", "precio": 35.0, "cantidadDisponible": 15},
+  {"nombre": "Zapatillas", "precio": 45.0, "cantidadDisponible": 20},
+  {"nombre": "Pañuelos", "precio": 25.0, "cantidadDisponible": 10},
+  {"nombre": "Corbata", "precio": 35.0, "cantidadDisponible": 15},
+  {"nombre": "Guantes", "precio": 45.0, "cantidadDisponible": 20}
+]
