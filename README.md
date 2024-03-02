@@ -17,7 +17,10 @@ de las compras realizadas adicionalmene se agrego un descuento(IVA) del 13% que 
 
 * José Manuel Rodríguez Lovo - Rlovo34
 
+## Links
 
+[Documento de la explicación del código](https://docs.google.com/document/d/1193tSjwavRkyKDDKDgjJr0oZoutR_zZ-8GCikprbkqY/edit?usp=sharing)
+Video del carrito funcional
 
 
 ## Licencia 📄
