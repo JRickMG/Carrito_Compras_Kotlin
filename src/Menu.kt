@@ -32,21 +32,29 @@ fun main() {
 
         print("Por favor, seleccione una opción: ")
         // Leer la opción del usuario
-        when (scanner.nextInt()) {
-            1 -> mostrarProductos(productos)                           // Mostrar productos disponibles
-            2 -> agregarAlCarrito(scanner, productos, carrito)        // Agregar productos al carrito
-            3 -> eliminarDelCarrito(scanner, carrito)                 // Eliminar productos del carrito
-            4 -> carrito.mostrarCarrito()                             // Mostrar contenido del carrito
-            5 -> {
-                println("\nIr a pagar2:")
-                // Lógica para pagar y vaciar el carrito
-                carrito.generarFactura()
+        try {
+            when (scanner.nextInt()) {
+                1 -> mostrarProductos(productos)                           // Mostrar productos disponibles
+                2 -> agregarAlCarrito(scanner, productos, carrito)        // Agregar productos al carrito
+                3 -> eliminarDelCarrito(scanner, carrito)                 // Eliminar productos del carrito
+                4 -> carrito.mostrarCarrito()                             // Mostrar contenido del carrito
+                5 -> {
+                    println("\nIr a pagar2:")
+                    // Lógica para pagar y vaciar el carrito
+                    carrito.generarFactura()
+                }
+
+                6 -> {
+                    salir =
+                        true                                           // Salir del bucle si se selecciona la opción 6
+                    println("Gracias por su visita. ¡Hasta luego!")
+                }
+
+                else -> println("Opción no válida. Por favor, seleccione una opción válida.")
             }
-            6 -> {
-                salir = true                                           // Salir del bucle si se selecciona la opción 6
-                println("Gracias por su visita. ¡Hasta luego!")
-            }
-            else -> println("Opción no válida. Por favor, seleccione una opción válida.")
+        }catch (e: Exception){
+            println("Por favor, ingrese un número válido.")
+            scanner.next()
         }
     }
 }
