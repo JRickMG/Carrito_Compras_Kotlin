@@ -30,8 +30,41 @@ class CarritoDeCompras {
         println("\nCarrito de compras:")
         // Iterar sobre la lista de productos seleccionados
         for ((index, pair) in productosSeleccionados.withIndex()) {
-            // Imprimir el nombre del producto y la cantidad seleccionada
-            println("${index + 1}. ${pair.first.nombre} - Cantidad: ${pair.second}")
+            val producto = pair.first
+            val cantidad = pair.second
+            val precioTotalPorProducto = producto.precio * cantidad
+            // Imprimir el nombre del producto, la cantidad seleccionada y el precio total por producto
+            println("${index + 1}. ${producto.nombre} - Cantidad: $cantidad - Precio Unit.: ${producto.precio} - Total: $precioTotalPorProducto")
         }
     }
+
+    fun generarFactura() {
+        println("\nFactura:")
+        println("----------------------------------------------------------------")
+        println(String.format("%-20s %-10s %-15s %-15s %-15s", "Producto", "Cantidad", "Precio Unit.", "Total sin IVA", "Total con IVA"))
+        println("----------------------------------------------------------------")
+
+        var subtotalGeneral = 0.0 //Total
+        var totalGeneralConIVA = 0.0 //Total + IVA
+        val iva = 0.13  // 13% de IVA
+
+        for ((producto, cantidad) in productosSeleccionados) {
+            val totalSinIVA = producto.precio * cantidad //Calculo de Cantidad de productos * precio
+            val totalConIVA = totalSinIVA * (1 + iva)
+            println(String.format("%-20s %-10d $%-14.2f $%-14.2f $%-14.2f", producto.nombre, cantidad, producto.precio, totalSinIVA, totalConIVA))
+            subtotalGeneral += totalSinIVA
+            totalGeneralConIVA += totalConIVA
+        }
+
+        println("----------------------------------------------------------------")
+        println(String.format("%-20s %-10s %-15s $%-14.2f", "Subtotal general:", "", "", subtotalGeneral))
+        println(String.format("%-20s %-10s %-15s $%-14.2f", "Total general con IVA:", "", "", totalGeneralConIVA))
+        println("----------------------------------------------------------------")
+
+
+        productosSeleccionados.clear()
+    }
+
+
+
 }

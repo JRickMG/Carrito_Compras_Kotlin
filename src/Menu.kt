@@ -38,8 +38,9 @@ fun main() {
             3 -> eliminarDelCarrito(scanner, carrito)                 // Eliminar productos del carrito
             4 -> carrito.mostrarCarrito()                             // Mostrar contenido del carrito
             5 -> {
-                println("\nIr a pagar:")
+                println("\nIr a pagar2:")
                 // Lógica para pagar y vaciar el carrito
+                carrito.generarFactura()
             }
             6 -> {
                 salir = true                                           // Salir del bucle si se selecciona la opción 6
@@ -99,3 +100,5 @@ fun eliminarDelCarrito(scanner: Scanner, carrito: CarritoDeCompras) {
         println("Opción no válida.")
     }
 }
+
+//Factura
