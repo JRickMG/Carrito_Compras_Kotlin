@@ -19,8 +19,9 @@ de las compras realizadas adicionalmene se agrego un descuento(IVA) del 13% que 
 
 ## Links
 
-[Documento de la explicación del código](https://docs.google.com/document/d/1193tSjwavRkyKDDKDgjJr0oZoutR_zZ-8GCikprbkqY/edit?usp=sharing)
-Video del carrito funcional
+* [Documento de la explicación del código](https://docs.google.com/document/d/1193tSjwavRkyKDDKDgjJr0oZoutR_zZ-8GCikprbkqY/edit?usp=sharing)
+
+ * [Video explicativo de la aplicacion](https://udbedu-my.sharepoint.com/:v:/g/personal/rr201800_alumno_udb_edu_sv/EQLnfyVZr9tJgGuO8aAPUcEB6TPp5JkJMCfnkHqK3dVbNQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fcGljP)
 
 
 ## Licencia 📄
